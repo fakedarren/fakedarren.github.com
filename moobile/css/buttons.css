@@ -1,0 +1,69 @@
+
+
+BUTTON, .button	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#696C72), to(#181C21), color-stop(0.5, #252931)) repeat-x;
+	color: #FFF;
+	display: block;
+	font-family: Helvetica, Arial;
+}
+	BUTTON:DISABLED, .disabled.button	{
+		color: #666;
+	}
+BUTTON.red	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#E1808D), to(#FD160A), color-stop(0.49, #E1808D), color-stop(0.5, #E44352)) repeat-x;
+}
+BUTTON.green	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#7EC084), to(#009C0C), color-stop(0.5, #26A831)) repeat-x;
+}
+BUTTON.grey	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#EEEFEF), to(#BCBEC1), color-stop(0.5, #CFD0D2)) repeat-x;
+	color: #000;
+}
+
+.segment	{
+	display: block;
+	margin: 5px auto 0;
+	width: 304px;
+}
+	.segment LI	{
+		background: -webkit-gradient(linear, left top, left bottom, from(#FCFCFC), to(#C8C8C8)) repeat-x;
+		border-bottom: 1px solid #ACACAC;
+		border-top: 1px solid #ACACAC;
+		color: #7F7F7F;
+		display: block;
+		float: left;
+		font-size: 18px;
+		font-weight: bold;
+		height: 43px;
+		line-height: 43px;
+		text-align: center;
+		text-shadow: 0 1px 0 #FFF;
+		width: 100px;
+	}
+	.segment LI:FIRST-CHILD	{
+		border: 1px solid #ACACAC;
+		-webkit-border-bottom-left-radius: 10px;
+		-webkit-border-top-left-radius: 10px;
+	}
+	.segment LI:LAST-CHILD	{
+		border: 1px solid #ACACAC;
+		-webkit-border-bottom-right-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+	}
+	.segment LI.selected	{
+		background: -webkit-gradient(linear, left top, left bottom, from(#3978E0), to(#70AAFC)) repeat-x;
+		border-color: #4B86D7;
+		color: #FFF;
+		text-shadow: 0 -1px #3066BB;
+	}
+.segment:AFTER	{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.segment.two LI	{
+	width: 150px;
+}
