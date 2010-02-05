@@ -1,0 +1,105 @@
+FORM	{
+	background: -webkit-gradient(linear, left top, right top, from(#C5CCD4), to(#CBD2D8), color-stop(0.72, #C5CCD4), color-stop(0.73, #CBD2D8)) repeat;
+	bottom: 0;
+	padding: 20px 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	-webkit-background-size: 7px 1px;
+}
+	FORM LABEL	{
+		color: #4C566C;
+		font-size: 16px;
+		font-weight: bold;
+	}
+		FORM LABEL SPAN	{
+			font-size: 14px;
+			font-weight: normal;
+		}
+	FORM > LABEL	{
+		padding: 0 10px;
+	}
+	FORM FIELDSET	{
+		background: #FFF;
+		border: 1px solid #A9ABAD;
+		margin: 10px auto;
+		-webkit-border-radius: 10px;
+	}
+		FORM FIELDSET > DIV	{
+			border-bottom: 1px solid #A9ABAD;
+			height: 43px;
+			line-height: 43px;
+			padding: 0 10px;
+		}
+			FORM FIELDSET > DIV LABEL	{
+				float: left;
+			}
+		FORM FIELDSET > DIV:LAST-CHILD	{
+			border-bottom: none;
+		}
+	FORM BUTTON	{
+		background: #FFF;
+		border: 1px solid #9F9F9F;
+		color: #000;
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+		height: 37px;
+		line-height: 37px;
+		margin: 0 0 10px;
+		width: 100%;
+		-webkit-border-radius: 10px;
+	}
+	FORM BUTTON.small	{
+		float: left;
+		width: 145px;
+	}
+	FORM BUTTON.small + BUTTON.small	{
+		margin-left: 10px;
+	}
+	FORM BUTTON.blue	{
+		color: #516691;
+	}
+
+.on-off	{
+	border: 1px solid #A9ABAD;
+	float: right;
+	height: 27px;
+	margin: 7px 0 0;
+	position: relative;
+	width: 94px;
+	-webkit-border-radius: 3px;
+}
+	.on-off SPAN	{
+		color: #858585;
+		display: block;
+		float: left;
+		font-size: 16px;
+		font-weight: bold;
+		height: 27px;
+		line-height: 29px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 50%;
+		-webkit-bottom-right-border-radius: 3px;
+	}
+	.on-off :FIRST-CHILD	{
+		background: -webkit-gradient(linear, left top, left bottom, from(#3978E0), to(#70AAFC)) repeat-x;
+		color: #FFF;
+		-webkit-border-bottom-left-radius: 3px;
+	}
+	.on-off .knob	{
+		background: -webkit-gradient(linear, left top, left bottom, from(#CDCDCD), to(#FBFBFB)) repeat-x;
+		border: 1px solid #A9ABAD;
+		height: 25px;
+		width: 45px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		-webkit-border-radius: 3px;
+	}
+	.on-off.on .knob	{
+		left: 0;
+		right: auto;
+	}

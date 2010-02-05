@@ -1,0 +1,37 @@
+HTML, BODY	{
+	height: 100%:
+	margin: 0;
+	padding: 0;
+}
+BODY	{
+	font: 10px Helvetica, Arial;
+}
+
+.screen	{
+	background: #EEE;
+	border: 5px solid #CCC;
+	float: left;
+	height: 480px;
+	margin: 20px;
+	position: relative;
+	width: 320px;
+}
+
+H1, H2, UL, OL, LI, FORM, FIELDSET	{
+	border: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+H1	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#B0BCCD), to(#6D84A2), color-stop(0.5, #8B9DB5)) repeat-x;
+	border-bottom: 1px solid #2D3642;
+	border-top: 1px solid #CDD5DF;
+	color: #FFF;
+	font-size: 20px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #666;
+}

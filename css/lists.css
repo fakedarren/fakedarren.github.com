@@ -1,0 +1,28 @@
+.list	{
+}
+	.list H2	{
+		background: -webkit-gradient(linear, left top, left bottom, from(#9FAAB3), to(#B4BCC3), color-stop(0.5, #A7B1BB));
+		border-bottom: 1px solid #989EA4;
+		color: #FFF;
+		font-size: 18px;
+		line-height: 26px;
+		height: 26px;
+		padding: 0 14px;
+		text-shadow: 0 1px 0 #62686D;
+	}
+	.list LI	{
+		background: #FFF;
+		border-bottom: 1px solid #E0E0E0;
+		font-size: 20px;
+		font-weight: bold;
+		height: 43px;
+		line-height: 43px;
+		padding: 0 14px;
+	}
+		.list LI A	{
+			background: url(graphics/icons/arrow.png) no-repeat 100% 50%;
+			color: #000;
+			display: block;
+			height: 100%;
+			text-decoration: none;
+		}

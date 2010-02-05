@@ -1,0 +1,28 @@
+
+
+.action.sheet	{
+	background: #515762 -webkit-gradient(linear, left top, left bottom, from(#A0A7AF), to(#515762)) repeat-x;
+	border-top: 1px solid #A0A7AF;
+	bottom: 0;
+	padding: 0 0 20px;
+	position: absolute;
+	-webkit-background-size: 22px;
+}
+	.action.sheet LABEL	{
+		color: #FFF;
+		display: block;
+		font-size: 14px;
+		margin: 0 50px;
+		padding: 10px;
+		text-align: center;
+		text-shadow: 0 -1px 0 #666;
+	}
+	.action.sheet BUTTON	{
+		border: 3px solid #3F4247;
+		font-size: 20px;
+		font-weight: bold;
+		height: 44px;
+		margin: 5px auto 0;
+		width: 270px;
+		-webkit-border-radius: 10px;
+	}
