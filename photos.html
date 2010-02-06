@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0;"/>
+ 	<title>iPhone UI</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/panes.css" rel="stylesheet" type="text/css" />
+	<link href="css/buttons.css" rel="stylesheet" type="text/css" />
+	<link href="css/forms.css" rel="stylesheet" type="text/css" />
+	<link href="css/badges.css" rel="stylesheet" type="text/css" />
+	<link href="css/lists.css" rel="stylesheet" type="text/css" />
+	<link href="css/animations.css" rel="stylesheet" type="text/css" />
+	<script src="js/mootools.core.js"></script>
+	<script src="js/Touch.js" type="text/javascript"></script>
+	<script src="js/Touch.Gesture.js" type="text/javascript"></script>
+	<style type="text/css">
+		BODY	{
+			background: #222;		
+		}
+		BODY > *	{
+			line-height: 420px;
+			text-align: center;
+		}
+		IMG	{
+			max-height: 420px;
+			max-width: 320px;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="current">
+		<img src="assets/img1.jpg" />
+	</div>
+	<div>
+		<img src="assets/img2.jpg" />
+	</div>
+	<div>
+		<img src="assets/img3.jpg" />
+	</div>
+	<div>
+		<img src="assets/img4.jpg" />
+	</div>
+	<div>
+		<img src="assets/img5.jpg" />
+	</div>
+</body>
+<script type="text/javascript">
+	window.addEvent('load', function(){
+		var touch = new Touch.Gesture($(document.body));
+		touch.addEvents({
+			'left': function(touches){
+				var index = $$('BODY > DIV').indexOf($$('BODY > .current')[0]);
+				if (index != 0){
+					$$('BODY DIV').setProperty('class', '');
+					$$('BODY DIV')[index - 1].addClass('current slide left');
+				}
+			},
+			'right': function(touches){
+				var index = $$('BODY > DIV').indexOf($$('BODY > .current')[0]);
+				var length = $$('BODY > DIV').length;
+				if (index != length - 1){
+					$$('BODY DIV').setProperty('class', '');
+					$$('BODY DIV')[index + 1].addClass('current slide right');
+				}
+			}
+		});
+		scrollTo(0,0);
+	});
+</script>
+</html>

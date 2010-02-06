@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name = "viewport" content = "user-scalable=no, width=device-width;"/> 
+ 	<title>iPhone UI</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/panes.css" rel="stylesheet" type="text/css" />
+	<link href="css/buttons.css" rel="stylesheet" type="text/css" />
+	<link href="css/forms.css" rel="stylesheet" type="text/css" />
+	<link href="css/badges.css" rel="stylesheet" type="text/css" />
+	<link href="css/lists.css" rel="stylesheet" type="text/css" />
+	<script src="js/mootools.core.js" type="text/javascript"></script>
+	<script src="js/Touch.js" type="text/javascript"></script>
+	<script src="js/Touch.Gesture.js" type="text/javascript"></script>
+	<style  type="text/css">
+		HTML, BODY	{
+			height: 390px;
+			margin: 0;
+			padding: 0;
+			width: 320px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="current">
+		<h1>
+			<a href="index.html" class="small back button">back</a>
+			<span>moobile</span>
+			<button>Save</button>
+		</h1>
+		<form>
+			<label>Try it: <span>gestures logged above</span></label>
+		</form>
+	</div>
+</body>
+
+<script type="text/javascript">
+	window.addEvent('load', function(){
+		var touch = new Touch.Gesture($(document.body));
+		touch.addEvent('gesture', function(touches){
+			if (touches.length > 0){
+				$$('h1 span').set('text', touches[touches.length - 1].direction);
+			}
+		});
+		scrollTo(0,0);
+	});
+</script>
+
+</html>

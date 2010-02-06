@@ -1,4 +1,7 @@
 
+A.button	{
+	text-decoration: none;
+}
 
 BUTTON, .button	{
 	background: -webkit-gradient(linear, left top, left bottom, from(#696C72), to(#181C21), color-stop(0.5, #252931)) repeat-x;
@@ -66,4 +69,59 @@ BUTTON.grey	{
 
 .segment.two LI	{
 	width: 150px;
+}
+
+.small.segment	{
+	width: 202px;
+}
+	.small.segment LI	{
+		background: -webkit-gradient(linear, left top, left bottom, from(#ABB9CA), to(#788DA9), color-stop(0.4, #ABB9CA), color-stop(0.6, #788DA9)) repeat-x;
+		border-bottom: 1px solid #59697D;
+		border-top: 1px solid #59697D;
+		color: #FFF;
+		font-size: 12px;
+		height: 27px;
+		line-height: 27px;
+		text-shadow: 0 -1px 0 #415470;
+		width: 66px;
+		
+	}
+	.small.segment LI:FIRST-CHILD	{
+		border: 1px solid #59697D;
+		-webkit-border-bottom-left-radius: 4px;
+		-webkit-border-top-left-radius: 4px;
+	}
+	.small.segment LI:LAST-CHILD	{
+		border: 1px solid #59697D;
+		-webkit-border-bottom-right-radius: 4px;
+		-webkit-border-top-right-radius: 4px;
+	}
+	.small.segment LI.selected	{
+		background: -webkit-gradient(linear, left top, left bottom, from(#8EA4C1), to(#4A6C9B), color-stop(0.45, #5877A2), color-stop(0.55, #486A9A)) repeat-x;
+	}
+.small.segment:AFTER	{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.two.small.segment	{
+	width: 136px;
+}
+	.two.small.segment LI:LAST-CHILD	{
+		border-left: none;
+	}
+
+
+.small.button	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#ABB9CA), to(#788DA9), color-stop(0.4, #ABB9CA), color-stop(0.6, #788DA9)) repeat-x;
+	border: 1px solid #59697D;
+	color: #FFF;
+	font-size: 12px;
+	height: 27px;
+	line-height: 27px;
+	text-shadow: 0 -1px 0 #415470;
+	width: 66px;
+	-webkit-border-radius: 4px;
 }

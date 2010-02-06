@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name = "viewport" content = "user-scalable=no, width=device-width;"/> 
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0;"/>
  	<title>iPhone UI</title>
 	<link href="css/main.css" rel="stylesheet" type="text/css" />
 	<link href="css/panes.css" rel="stylesheet" type="text/css" />
@@ -10,43 +10,29 @@
 	<link href="css/forms.css" rel="stylesheet" type="text/css" />
 	<link href="css/badges.css" rel="stylesheet" type="text/css" />
 	<link href="css/lists.css" rel="stylesheet" type="text/css" />
-	<script src="js/mootools.core.js" type="text/javascript"></script>
-	<script src="js/Touch.js" type="text/javascript"></script>
-	<script src="js/Touch.Gesture.js" type="text/javascript"></script>
-	<style  type="text/css">
-		HTML, BODY	{
-			height: 480px;
-			margin: 0;
-			padding: 0;
-			width: 320px;
-		}
-		H1	{
-			width: 100%;		
-		}
-		FORM	{
-			height: 420px;
-			top: 40px;
-			width: 300px;
-		}
-	</style>
+	<script src="js/mootools.core.js"></script>
 </head>
 
 <body>
-	<h1></h1>
-	<form>
-		<label>Try it: <span>gestures logged above</span></label>
-	</form>
+	<div class="current">
+		<h1>moobile</h1>
+		<div class="list">
+			<h2>Styles</h2>
+			<ul>
+				<li><a href="styles.form.html">Forms</a></li>
+				<li><a href="styles.buttons.html">Buttons</a></li>
+				<li><a href="styles.segments.html">Segments</a></li>
+				<li><a href="styles.smallsegments.html">Small segments</a></li>
+			</ul>
+			<h2>Interactions</h2>
+			<ul>
+				<li><a href="gestures.html">Gestures check</a></li>
+			</ul>
+			<h2>App demos</h2>
+			<ul>
+				<li><a href="photos.html">Photos</a></li>
+			</ul>
+		</div>
+	</div>
 </body>
-
-<script type="text/javascript">
-	window.addEvent('load', function(){
-		var touch = new Touch.Gesture($(document.body));
-		touch.addEvent('gesture', function(touches){
-			if (touches.length > 0){
-				$$('h1').set('text', touches[touches.length - 1].direction);
-			}
-		});
-	});
-</script>
-
 </html>
